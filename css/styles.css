@@ -1,0 +1,157 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilo del HTML Index(Inicio)*/
+body{
+    background-image: url(../img/Fondomadera.jpg);
+}
+
+/*Estilos del Header*/
+.header-inicio{
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header{
+    background-image: url(../img/Papelnegro.jpg);
+    background-size: cover;
+}
+
+.header-inicio div img{
+    width: 150px;
+    margin: 10px;
+}
+
+.header-inicio .menu{
+    flex-direction: row;
+}
+
+.header-inicio h1{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 60px;
+    color: white;
+    font-weight: lighter;
+    margin: 15px;
+}
+
+.header-inicio nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-inicio nav ul li{
+    list-style: none;
+    margin: 15px;
+}
+.header-inicio nav ul li a{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #CC9544;
+    text-decoration: none;
+}
+
+/*Estilos del main*/
+.main-inicio h2{
+    font-family: 'Beth Ellen', cursive;
+    font-size: 45px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main-inicio div{
+    font-family: 'Beth Ellen', cursive;
+    font-size: 33px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.main-inicio div p{
+    font-weight: lighter;
+}
+
+.main-inicio div img{
+    width: 600px;
+    height: 400px;
+    margin: 30px 48px;
+}
+
+/*Estilos del contenido de inicio*/
+.main-inicio .contenido-inicio-uno{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.main-inicio .contenido-inicio-dos{
+    margin-top: 90px;
+    text-align: center;
+}
+
+.main-inicio .contenido-inicio-tres{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+/*Estilos de Section*/
+section div a{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.volver-arriba{
+    margin: 18px;
+}
+
+.item-fixed{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    margin: 21px;
+}
+
+/*Estilos del footer*/
+footer{
+    background-image: url(../img/Papelnegro.jpg);
+    background-size: cover;
+    padding: 6px;
+    text-align: center;
+}
+
+.footer-inicio h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    color: white;
+    margin: 20px;
+}
+
+.footer-inicio div{
+    margin: 15px;
+}
+
+.footer-inicio div img{
+    margin-left: 15px ;
+    margin-right: 15px ;
+}
+
+.footer-inicio p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 15px;
+}
