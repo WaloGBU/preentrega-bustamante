@@ -86,7 +86,7 @@ header{
     margin: 30px 48px;
 }
 
-/*Estilos del contenido de inicio*/
+/*Estilos del contenido de inicio (index)*/
 .main-inicio .contenido-inicio-uno{
     display: flex;
     text-align: center;
@@ -154,4 +154,11 @@ footer{
     font-size: 15px;
     color: white;
     margin: 15px;
+}
+
+/*Media Queries*/
+@media screen and (max-width:1020px){
+    .main-inicio h2{
+        background-color: tomato;
+    }
 }
