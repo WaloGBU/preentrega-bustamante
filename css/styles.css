@@ -12,7 +12,7 @@ body{
 
 /*Estilos del Header*/
 .header-inicio{
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -36,7 +36,7 @@ header{
     font-size: 60px;
     color: white;
     font-weight: lighter;
-    margin: 15px;
+    margin-top: 15px;
 }
 
 .header-inicio nav ul{
@@ -70,14 +70,24 @@ header{
 
 .main-inicio div{
     font-family: 'Beth Ellen', cursive;
-    font-size: 33px;
     font-weight: lighter;
     color: white;
     text-shadow: 2px 2px 2px black;
 }
 
+.main-inicio div h3{
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+.main-inicio div h4{
+    font-weight: lighter;
+    font-size: 35px;
+}
+
 .main-inicio div p{
     font-weight: lighter;
+    font-size: 35px;
 }
 
 .main-inicio div img{
@@ -169,8 +179,6 @@ footer{
         font-size: 48px;
     }
 
-    .header-inicio 
-
     /*Nuevos estilos del main*/
     .main-inicio h2{
         font-size: 36px;
@@ -189,6 +197,21 @@ footer{
     .main-inicio div img{
         width: 450px;
         height: auto;
+    }
+
+    .main-inicio div h3{
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    
+    .main-inicio div h4{
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    
+    .main-inicio div p{
+        font-weight: lighter;
+        font-size: 24px;
     }
 
     /*Nuevos estilos de las section*/
