@@ -8,6 +8,7 @@
 /*Estilo del HTML Index(Inicio)*/
 body{
     background-image: url(../img/Fondomadera.jpg);
+    overflow-x: hidden;
 }
 
 /*Estilos del Header*/
@@ -47,7 +48,13 @@ header{
 .header-inicio nav ul li{
     list-style: none;
     margin: 15px;
+    transition: 1s;
 }
+
+.header-inicio nav ul li:hover{
+    transform: scale(1.2);
+}
+
 .header-inicio nav ul li a{
     font-family: 'Rubik Dirt', cursive;
     font-size: 24px;
@@ -62,7 +69,7 @@ header{
     font-size: 45px;
     font-weight: lighter;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 3px black;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -118,13 +125,13 @@ header{
 section div a{
     font-family: 'Rubik Dirt', cursive;
     font-size: 24px;
-    color: white;
     font-weight: lighter;
+    color: white;
     text-decoration: none;
 }
 
 .volver-arriba{
-    margin: 1rem;
+    margin: 1.2rem;
 }
 
 .item-fixed{
@@ -146,6 +153,7 @@ footer{
 .footer-inicio h5{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 21px;
+    font-weight: bold;
     color: white;
     margin: 20px;
 }
@@ -167,7 +175,7 @@ footer{
 }
 
 /*Media Queries*/
-@media screen and (max-width:1020px){
+@media screen and (max-width:1200px){
 
     /*Nuevo estilo del header*/
     .header-inicio{
