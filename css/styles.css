@@ -8,24 +8,26 @@
 /*Estilo del HTML Index(Inicio)*/
 body{
     background-image: url(../img/Fondomadera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     overflow-x: hidden;
 }
 
 /*Estilos del Header*/
 .header-inicio{
+    background-image: url(../img/Papelnegro.jpg);
+    background-size: cover;
     padding: 15px 15px 0px 15px;
     display: flex;
     justify-content: space-evenly;
-}
-
-header{
-    background-image: url(../img/Papelnegro.jpg);
-    background-size: cover;
+    align-items: center;
 }
 
 .header-inicio div img{
-    width: 150px;
-    margin: 10px;
+    width: 180px;
+    margin-bottom: 10px;
 }
 
 .header-inicio .menu{
@@ -35,8 +37,9 @@ header{
 .header-inicio h1{
     font-family: 'Rubik Dirt', cursive;
     font-size: 60px;
-    color: white;
     font-weight: lighter;
+    text-align: center;
+    color: white;
     margin-top: 15px;
 }
 
@@ -185,9 +188,10 @@ footer{
 
     .header-inicio h1{
         font-size: 48px;
+        margin-bottom: 1.5rem;
     }
 
-    /*Nuevos estilos del main*/
+    /*Nuevos estilos del main-inicio*/
     .main-inicio h2{
         font-size: 36px;
     }
