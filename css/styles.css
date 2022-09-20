@@ -124,6 +124,103 @@ body{
     justify-content: space-evenly;
 }
 
+/*Estilos del contenido de Productos*/
+.main-productos h2{
+    font-family: 'Beth Ellen', cursive;
+    font-size: 45px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main-productos div h3{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    margin: 2rem;
+}
+
+.main-productos div{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: 
+    "card-uno card-dos card-tres card-cuatro"
+    "card-cinco card-seis card-siete card-ocho"
+    "card-nueve card-diez card-once card-doce";
+    justify-items: center;
+}
+
+.main-productos div .card-uno{
+    grid-area: card-uno;
+    display: block;
+}
+
+.main-productos div .card-dos{
+    grid-area: card-dos;
+    display: block;
+}
+
+.main-productos div .card-tres{
+    grid-area: card-tres;
+    display: block;
+}
+
+.main-productos div .card-cuatro{
+    grid-area: card-cuatro;
+    display: block;
+}
+
+.main-productos div .card-cinco{
+    grid-area: card-cinco;
+    display: block;
+}
+
+.main-productos div .card-seis{
+    grid-area: card-seis;
+    display: block;
+}
+
+.main-productos div .card-siete{
+    grid-area: card-siete;
+    display: block;
+}
+
+.main-productos div .card-ocho{
+    grid-area: card-ocho;
+    display: block;
+}
+
+.main-productos div .card-nueve{
+    grid-area: card-nueve;
+    display: block;
+}
+
+.main-productos div .card-diez{
+    grid-area: card-diez;
+    display: block;
+}
+
+.main-productos div .card-once{
+    grid-area: card-once;
+    display: block;
+}
+
+.main-productos div .card-doce{
+    grid-area: card-doce;
+    display: block;
+}
+
+.main-productos div .card-body{
+    display: block;
+}
+
 /*Estilos de Section*/
 section div a{
     font-family: 'Rubik Dirt', cursive;
