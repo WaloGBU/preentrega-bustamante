@@ -105,7 +105,7 @@ body{
     height: 400px;
     margin: 30px 48px;
     border-radius: 12px;
-    border-color: 3px 3px 3px whitesmoke;
+    border: 1px solid whitesmoke;
 }
 
 /*Estilos del contenido de inicio (index)*/
@@ -332,6 +332,13 @@ footer{
 
     section{
         display: none;
+    }
+
+    /*Nuevos estilos del main-productos*/
+    .main-productos div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
