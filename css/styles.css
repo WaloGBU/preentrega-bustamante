@@ -12,7 +12,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    overflow-x: hidden;
+
 }
 
 /*Estilos del Header*/
@@ -30,10 +30,6 @@ body{
     margin-bottom: 10px;
 }
 
-.header-inicio .menu{
-    flex-direction: row;
-}
-
 .header-inicio h1{
     font-family: 'Rubik Dirt', cursive;
     font-size: 60px;
@@ -46,12 +42,14 @@ body{
 .header-inicio nav ul{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .header-inicio nav ul li{
     list-style: none;
     margin: 15px;
     transition: 1s;
+    text-align: center;
 }
 
 .header-inicio nav ul li:hover{
@@ -109,24 +107,74 @@ body{
 }
 
 /*Estilos del contenido de inicio (index)*/
-.main-inicio .contenido-inicio-uno{
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
+.main-inicio div .subtitulo{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 2rem;
 }
 
-.main-inicio .contenido-inicio-dos{
-    margin-top: 90px;
+.main-inicio div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: 
+    "contenido-inicio-uno contenido-inicio-tres"
+    "contenido-inicio-dos contenido-inicio-cuatro"
+    "contenido-inicio-cinco contenido-inicio-cinco"
+    "contenido-inicio-seis contenido-inicio-ocho"
+    "contenido-inicio-siete contenido-inicio-nueve";
     text-align: center;
 }
 
-.main-inicio .contenido-inicio-tres{
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
+.main-inicio div .contenido-inicio-uno{
+    grid-area: contenido-inicio-uno;
+    display: inline-block;
 }
 
-/*Estilos del contenido de Productos*/
+.main-inicio div .contenido-inicio-dos{
+    grid-area: contenido-inicio-dos;
+    display: inline-block;
+}
+
+.main-inicio div .contenido-inicio-tres{
+    grid-area: contenido-inicio-tres;
+    display: inline-block;
+}
+
+.main-inicio div .contenido-inicio-cuatro{
+    grid-area: contenido-inicio-cuatro;
+    display: inline-block;
+}
+
+.main-inicio div .contenido-inicio-cinco{
+    grid-area: contenido-inicio-cinco;
+    display: inline-block;
+}
+
+.main-inicio div .contenido-inicio-seis{
+    grid-area: contenido-inicio-seis;
+    display: inline-block;
+}
+
+.main-inicio div .contenido-inicio-siete{
+    grid-area: contenido-inicio-siete;
+    display: inline-block;
+}
+
+.main-inicio div .contenido-inicio-ocho{
+    grid-area: contenido-inicio-ocho;
+    display: inline-block;
+}
+
+.main-inicio div .contenido-inicio-nueve{
+    grid-area: contenido-inicio-nueve;
+    display: inline-block;
+}
+
+/*Estilos del main-contenido de Productos*/
 .main-productos h2{
     font-family: 'Beth Ellen', cursive;
     font-size: 45px;
@@ -138,14 +186,12 @@ body{
     margin-bottom: 60px;
 }
 
-.main-productos div h3{
-    font-family: 'Beth Ellen', cursive;
-    font-weight: lighter;
-    font-size: 35px;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    text-align: center;
-    margin: 2rem;
+.main-productos div .card-title{
+    font-size: 24px;
+}
+
+.main-productos div .card-text{
+    align-items: center;
 }
 
 .main-productos div{
@@ -161,66 +207,66 @@ body{
 
 .main-productos div .card-uno{
     grid-area: card-uno;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-dos{
     grid-area: card-dos;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-tres{
     grid-area: card-tres;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-cuatro{
     grid-area: card-cuatro;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-cinco{
     grid-area: card-cinco;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-seis{
     grid-area: card-seis;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-siete{
     grid-area: card-siete;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-ocho{
     grid-area: card-ocho;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-nueve{
     grid-area: card-nueve;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-diez{
     grid-area: card-diez;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-once{
     grid-area: card-once;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-doce{
     grid-area: card-doce;
-    display: block;
+    display: inline-block;
 }
 
 .main-productos div .card-body{
-    display: block;
+    display: inline-block;
 }
 
 /*Estilos de Section*/
@@ -277,7 +323,7 @@ footer{
 }
 
 /*Media Queries*/
-@media screen and (max-width:1200px){
+@media screen and (max-width:1000px){
 
     /*Nuevo estilo del header*/
     .header-inicio{
@@ -291,38 +337,23 @@ footer{
     }
 
     /*Nuevos estilos del main-inicio*/
+    .main-inicio div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .main-inicio h2{
         font-size: 36px;
     }
 
-    .main-inicio .contenido-inicio-uno{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .main-inicio .contenido-inicio-tres{
-        display: flex;
-        flex-wrap: wrap;
+    .main-inicio div p{
+        font-size: 30px;
     }
 
     .main-inicio div img{
         width: 450px;
         height: auto;
-    }
-
-    .main-inicio div h3{
-        font-weight: lighter;
-        font-size: 30px;
-    }
-    
-    .main-inicio div h4{
-        font-weight: lighter;
-        font-size: 30px;
-    }
-    
-    .main-inicio div p{
-        font-weight: lighter;
-        font-size: 24px;
     }
 
     /*Nuevos estilos de las section*/
