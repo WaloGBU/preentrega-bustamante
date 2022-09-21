@@ -104,6 +104,8 @@ body{
     width: 600px;
     height: 400px;
     margin: 30px 48px;
+    border-radius: 12px;
+    border-color: 3px 3px 3px whitesmoke;
 }
 
 /*Estilos del contenido de inicio (index)*/
@@ -149,7 +151,7 @@ body{
 .main-productos div{
     display: grid;
     grid-template-columns: repeat(4, 4fr);
-    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
     grid-template-areas: 
     "card-uno card-dos card-tres card-cuatro"
     "card-cinco card-seis card-siete card-ocho"
