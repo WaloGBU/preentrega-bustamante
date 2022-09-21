@@ -12,7 +12,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-
 }
 
 /*Estilos del Header*/
@@ -64,7 +63,7 @@ body{
     text-decoration: none;
 }
 
-/*Estilos del main*/
+/*Estilos del main del Index*/
 .main-inicio h2{
     font-family: 'Beth Ellen', cursive;
     font-size: 45px;
@@ -83,30 +82,6 @@ body{
     text-shadow: 2px 2px 2px black;
 }
 
-.main-inicio div h3{
-    font-weight: lighter;
-    font-size: 35px;
-}
-
-.main-inicio div h4{
-    font-weight: lighter;
-    font-size: 35px;
-}
-
-.main-inicio div p{
-    font-weight: lighter;
-    font-size: 35px;
-}
-
-.main-inicio div img{
-    width: 600px;
-    height: 400px;
-    margin: 30px 48px;
-    border-radius: 12px;
-    border: 1px solid whitesmoke;
-}
-
-/*Estilos del contenido de inicio (index)*/
 .main-inicio div .subtitulo{
     font-family: 'Beth Ellen', cursive;
     font-weight: lighter;
@@ -115,6 +90,21 @@ body{
     text-shadow: 2px 2px 2px black;
     margin: 2rem;
 }
+
+.main-inicio div p{
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+.main-inicio div img{
+    width: 72%;
+    height: auto;
+    margin: 30px;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+}
+
+/*Estilos del contenido de inicio (index)*/
 
 .main-inicio div{
     display: grid;
@@ -174,7 +164,7 @@ body{
     display: inline-block;
 }
 
-/*Estilos del main-contenido de Productos*/
+/*Estilos del main de Productos*/
 .main-productos h2{
     font-family: 'Beth Ellen', cursive;
     font-size: 45px;
@@ -269,6 +259,136 @@ body{
     display: inline-block;
 }
 
+/*Estilos del main de Promociones*/
+.main-promociones h2{
+    font-family: 'Beth Ellen', cursive;
+    font-size: 45px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main-promociones div{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.main-promociones div .subtitulo{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 2rem;
+}
+
+.main-promociones div p{
+    font-weight: lighter;
+    font-size: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.main-promociones div img{
+    width: 54%;
+    height: auto;
+    margin: 30px;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+}
+
+/*Estilos del main de Sobre Nosotros*/
+.main-nosotros h2{
+    font-family: 'Beth Ellen', cursive;
+    font-size: 45px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main-nosotros div{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.main-nosotros div .subtitulo{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 2rem;
+}
+
+.main-nosotros div p{
+    font-weight: lighter;
+    font-size: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.main-nosotros div img{
+    width: 50%;
+    height: auto;
+    margin: 30px;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+}
+
+/*Estilos del main de Contáctanos*/
+.main-contactanos h2{
+    font-family: 'Beth Ellen', cursive;
+    font-size: 45px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main-contactanos div{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.main-contactanos div .subtitulo{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 2rem;
+}
+
+.main-contactanos div p{
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+.main-contactanos div img{
+    width: 72%;
+    height: auto;
+    margin: 30px;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+}
+
 /*Estilos de Section*/
 section div a{
     font-family: 'Rubik Dirt', cursive;
@@ -323,7 +443,7 @@ footer{
 }
 
 /*Media Queries*/
-@media screen and (max-width:1000px){
+@media screen and (max-width:1024px){
 
     /*Nuevo estilo del header*/
     .header-inicio{
@@ -352,7 +472,7 @@ footer{
     }
 
     .main-inicio div img{
-        width: 450px;
+        width: 85%;
         height: auto;
     }
 
