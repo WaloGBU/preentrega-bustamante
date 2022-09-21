@@ -476,6 +476,18 @@ footer{
         height: auto;
     }
 
+    .main-inicio div .contenido-inicio-cinco{
+        width: 100vh;
+    }
+
+    .main-inicio div .contenido-inicio-seis{
+        width: 100vh;
+    }
+
+    .main-inicio div .contenido-inicio-ocho{
+        width: 100vh;
+    }
+
     /*Nuevos estilos de las section*/
     .volver-arriba{
         display: none;
@@ -490,6 +502,10 @@ footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .main-productos h2{
+        font-size: 36px;
     }
 
 }
