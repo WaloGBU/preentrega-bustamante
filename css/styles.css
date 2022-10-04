@@ -3,3 +3,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+/*Estilos del Header*/
+.header-inicio {
+  background-image: url(../img/Papelnegro.jpg);
+  background-size: cover;
+  padding: 15px 15px 0px 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .header-inicio div a img {
+    width: 180px;
+    margin-bottom: 10px; }
+  .header-inicio .menu h1 {
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    margin-top: 15px; }
+  .header-inicio .menu nav div ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .header-inicio .menu nav div ul li {
+      list-style: none;
+      margin: 15px;
+      transition: 1s;
+      text-align: center; }
+      .header-inicio .menu nav div ul li:hover {
+        transform: scale(1.2);
+        color: whitesmoke; }
+      .header-inicio .menu nav div ul li a {
+        font-family: 'Rubik Dirt', cursive;
+        font-size: 24px;
+        font-weight: lighter;
+        color: #CC9544;
+        text-decoration: none; }
