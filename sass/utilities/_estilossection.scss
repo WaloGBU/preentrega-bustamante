@@ -1,0 +1,21 @@
+/*Estilos de las Sections*/
+.volver-arriba{
+    margin: 1.2rem;
+    div{
+        a{
+            font-family: 'Rubik Dirt', cursive;
+            font-size: 24px;
+            font-weight: lighter;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.item-fixed{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    margin: 21px;
+}

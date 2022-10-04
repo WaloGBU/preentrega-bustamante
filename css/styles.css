@@ -4,6 +4,16 @@
   padding: 0;
   box-sizing: border-box; }
 
+.main-inicio h2, .main-productos h2, .main-promociones h2, .main-contactanos h2, .main-nosotros h2 {
+  font-family: 'Beth Ellen', cursive;
+  font-size: 45px;
+  font-weight: lighter;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
 /*Estilos del Header*/
 .header-inicio {
   background-image: url(../img/Papelnegro.jpg);
@@ -33,10 +43,50 @@
       text-align: center; }
       .header-inicio .menu nav div ul li:hover {
         transform: scale(1.2);
-        color: whitesmoke; }
+        color: white; }
       .header-inicio .menu nav div ul li a {
         font-family: 'Rubik Dirt', cursive;
         font-size: 24px;
         font-weight: lighter;
         color: #CC9544;
         text-decoration: none; }
+
+/*Estilos del Footer*/
+footer {
+  background-image: url(../img/Papelnegro.jpg);
+  background-size: cover;
+  padding: 6px;
+  text-align: center; }
+  footer h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    margin: 20px; }
+  footer div {
+    margin: 15px; }
+    footer div a img {
+      margin-left: 15px;
+      margin-right: 15px; }
+  footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 15px; }
+
+/*Estilos de las Sections*/
+.volver-arriba {
+  margin: 1.2rem; }
+  .volver-arriba div a {
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 24px;
+    font-weight: lighter;
+    color: white;
+    text-decoration: none; }
+
+.item-fixed {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  margin: 21px; }

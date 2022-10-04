@@ -20,7 +20,7 @@
             font-size: 60px;
             font-weight: lighter;
             text-align: center;
-            color: white;
+            color: $color-fuente-header;
             margin-top: 15px;
         }
         nav{
@@ -36,13 +36,13 @@
                         text-align: center;
                         &:hover{
                             transform: scale(1.2);
-                            color: whitesmoke;
+                            color: $color-fuente-header;
                         }
                         a{
                             font-family: 'Rubik Dirt', cursive;
                             font-size: 24px;
                             font-weight: lighter;
-                            color: #CC9544;
+                            color: $color-fuente-menu;
                             text-decoration: none;
                         }
                     }

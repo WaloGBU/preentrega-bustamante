@@ -1,4 +1,22 @@
 //Imports
+
+//Utilities
 @import "utilities/reset";
 @import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
+
+//Estilos generales
 @import "utilities/estilosheader";
+@import "utilities/estilosfooter";
+@import "utilities/estilossection";
+
+//Html
+@import "utilities/index";
+@import "utilities/productos";
+@import "utilities/promociones";
+@import "utilities/contactanos";
+@import "utilities/nosotros";
+
+//Media Queries
+@import "utilities/mq";
