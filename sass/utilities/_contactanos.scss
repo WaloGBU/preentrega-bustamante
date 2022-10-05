@@ -3,3 +3,51 @@
         @extend %titulo;
     }
 }
+
+/*Contenido de Contáctanos*/
+.main-contactanos{
+    div{
+        .subtitulo{
+            @include subtitulo;
+        }
+        form{
+            background: rgba(0,0,0,0.4);
+            margin: auto;
+            padding: 10px 20px;
+            width: 450px;
+            border-radius: 12px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            legend{
+                color: white;
+                text-align: center;
+                margin: 0;
+                font-size: 30px;
+                margin-bottom: 20px;
+                div{
+                    input, textarea{
+                        width: 100%;
+                        margin-bottom: 20px;
+                        padding: 7px;
+                        box-sizing: border-box;
+                        font-size: 17px;
+                        border: none;
+                    }
+                    textarea{
+                        min-height: 100px;
+                        max-height: 200px;
+                        max-width: 100%;
+                    }
+                    .boton{
+                        background-color: gray;
+                        color: white;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+        p{
+            @include parrafo;
+        }
+    }
+}

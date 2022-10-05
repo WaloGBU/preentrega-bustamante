@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Reset*/
 * {
   margin: 0;
@@ -54,7 +55,7 @@ body {
         font-weight: lighter;
         color: #CC9544;
         text-decoration: none;
-        transition: 1s; }
+        transition: 0.8s; }
         .header-inicio .menu nav div ul li a:hover {
           transform: scale(1.2);
           color: white; }
@@ -123,7 +124,7 @@ footer {
     height: auto;
     margin: 30px;
     border-radius: 12px;
-    border: 1px solid whitesmoke; }
+    border: 2px solid whitesmoke; }
 
 .main-inicio div {
   display: grid;
@@ -223,3 +224,91 @@ footer {
   .main-promociones .slide div p {
     text-shadow: 3px 1px 2px black;
     font-size: 21px; }
+
+/*Contenido de Contáctanos*/
+.main-contactanos div .subtitulo {
+  font-family: 'Beth Ellen', cursive;
+  font-weight: lighter;
+  font-size: 35px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  margin: 2rem; }
+
+.main-contactanos div form {
+  background: rgba(0, 0, 0, 0.4);
+  margin: auto;
+  padding: 10px 20px;
+  width: 450px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin-top: 20px; }
+  .main-contactanos div form legend {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px; }
+    .main-contactanos div form legend div input, .main-contactanos div form legend div textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 7px;
+      box-sizing: border-box;
+      font-size: 17px;
+      border: none; }
+    .main-contactanos div form legend div textarea {
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%; }
+    .main-contactanos div form legend div .boton {
+      background-color: gray;
+      color: white;
+      padding: 20px; }
+
+.main-contactanos div p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  margin-left: 30px;
+  margin-right: 30px; }
+
+/*Contenido de Nosotros*/
+.main-nosotros div {
+  text-align: center; }
+  .main-nosotros div .subtitulo {
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 2rem; }
+  .main-nosotros div p {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 30px;
+    margin-right: 30px; }
+  .main-nosotros div img {
+    width: 90%;
+    height: auto;
+    margin: 30px;
+    border-radius: 12px;
+    border: 2px solid white; }
+
+.main-nosotros div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.1fr 0.1fr;
+  grid-template-areas: "contenido-nosotros-uno contenido-nosotros-dos" "contenido-nosotros-tres contenido-nosotros-cuatro";
+  align-items: center; }
+  .main-nosotros div .contenido-nosotros-uno {
+    grid-area: contenido-nosotros-uno;
+    display: inline-block; }
+  .main-nosotros div .contenido-nosotros-dos {
+    grid-area: contenido-nosotros-dos;
+    display: inline-block; }
+  .main-nosotros div .contenido-nosotros-tres {
+    grid-area: contenido-nosotros-tres;
+    display: inline-block; }
+  .main-nosotros div .contenido-nosotros-cuatro {
+    grid-area: contenido-nosotros-cuatro;
+    display: inline-block; }

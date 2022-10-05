@@ -3,3 +3,47 @@
         @extend %titulo;
     }
 }
+
+/*Contenido de Nosotros*/
+.main-nosotros{
+    div{
+        text-align: center;
+        .subtitulo{
+            @include subtitulo;
+        }
+        p{
+            @include parrafo;
+        }
+        img{
+            @include imagen;
+        }
+    }
+}
+
+.main-nosotros{
+    div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 0.1fr 0.1fr;
+        grid-template-areas: 
+        "contenido-nosotros-uno contenido-nosotros-dos"
+        "contenido-nosotros-tres contenido-nosotros-cuatro";
+        align-items: center;
+        .contenido-nosotros-uno{
+            grid-area: contenido-nosotros-uno;
+            display: inline-block;
+        }
+        .contenido-nosotros-dos{
+            grid-area: contenido-nosotros-dos;
+            display: inline-block;
+        }
+        .contenido-nosotros-tres{
+            grid-area: contenido-nosotros-tres;
+            display: inline-block;
+        }
+        .contenido-nosotros-cuatro{
+            grid-area: contenido-nosotros-cuatro;
+            display: inline-block;        
+        }
+    }
+}
