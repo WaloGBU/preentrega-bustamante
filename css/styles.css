@@ -210,9 +210,16 @@ footer {
     display: inline-block; }
 
 /*Contenido de Promociones*/
-.main-promociones div img {
-  width: 54%;
-  height: auto;
-  margin: 30px;
-  border-radius: 12px;
-  border: 1px solid whitesmoke; }
+.main-promociones .slide {
+  margin: 2rem; }
+  .main-promociones .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid whitesmoke; }
+  .main-promociones .slide div h3 {
+    text-shadow: 3px 1px 2px black;
+    font-size: 35px; }
+  .main-promociones .slide div p {
+    text-shadow: 3px 1px 2px black;
+    font-size: 21px; }
