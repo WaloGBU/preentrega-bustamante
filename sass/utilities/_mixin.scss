@@ -1,0 +1,31 @@
+@mixin contenido{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+@mixin subtitulo{
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 2rem;
+}
+
+@mixin parrafo{
+    font-weight: lighter;
+    font-size: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@mixin imagen{
+    width: 54%;
+    height: auto;
+    margin: 30px;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+}

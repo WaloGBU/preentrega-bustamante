@@ -158,3 +158,61 @@ footer {
   .main-inicio div .contenido-inicio-nueve {
     grid-area: contenido-inicio-nueve;
     display: inline-block; }
+
+/*Contenido de Productos*/
+.main-productos div {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-areas: "card-uno card-dos card-tres card-cuatro" "card-cinco card-seis card-siete card-ocho" "card-nueve card-diez card-once card-doce";
+  justify-items: center; }
+  .main-productos div .card-title {
+    font-size: 24px; }
+  .main-productos div .card-text {
+    align-items: center; }
+  .main-productos div .card-uno {
+    grid-area: card-uno;
+    display: inline-block; }
+  .main-productos div .card-dos {
+    grid-area: card-dos;
+    display: inline-block; }
+  .main-productos div .card-tres {
+    grid-area: card-tres;
+    display: inline-block; }
+  .main-productos div .card-cuatro {
+    grid-area: card-cuatro;
+    display: inline-block; }
+  .main-productos div .card-cinco {
+    grid-area: card-cinco;
+    display: inline-block; }
+  .main-productos div .card-seis {
+    grid-area: card-seis;
+    display: inline-block; }
+  .main-productos div .card-siete {
+    grid-area: card-siete;
+    display: inline-block; }
+  .main-productos div .card-ocho {
+    grid-area: card-ocho;
+    display: inline-block; }
+  .main-productos div .card-nueve {
+    grid-area: card-nueve;
+    display: inline-block; }
+  .main-productos div .card-diez {
+    grid-area: card-diez;
+    display: inline-block; }
+  .main-productos div .card-once {
+    grid-area: card-once;
+    display: inline-block; }
+  .main-productos div .card-doce {
+    grid-area: card-doce;
+    display: inline-block; }
+  .main-productos div .card-body {
+    display: inline-block; }
+
+/*Contenido de Promociones*/
+.main-promociones div img {
+  width: 54%;
+  height: auto;
+  margin: 30px;
+  border-radius: 12px;
+  border: 1px solid whitesmoke; }
