@@ -8,6 +8,10 @@
             font-weight: lighter;
             color: white;
             text-decoration: none;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.2);
+            }
         }
     }
 }

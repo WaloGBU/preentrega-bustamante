@@ -1,3 +1,12 @@
+/*Estilos del Body*/
+body{
+    background-image: url(../img/Fondomadera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 /*Estilos del Header*/
 .header-inicio{
     background-image: url(../img/Papelnegro.jpg);
@@ -32,18 +41,19 @@
                     li{
                         list-style: none;
                         margin: 15px;
-                        transition: 1s;
                         text-align: center;
-                        &:hover{
-                            transform: scale(1.2);
-                            color: $color-fuente-header;
-                        }
                         a{
                             font-family: 'Rubik Dirt', cursive;
                             font-size: 24px;
                             font-weight: lighter;
                             color: $color-fuente-menu;
                             text-decoration: none;
+                            transition: 1s;
+                            &:hover{
+                                transform: scale(1.2);
+                                color: $color-fuente-header;
+                            }
+                            
                         }
                     }
                 }

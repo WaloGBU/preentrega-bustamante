@@ -14,6 +14,14 @@
   margin-top: 60px;
   margin-bottom: 60px; }
 
+/*Estilos del Body*/
+body {
+  background-image: url(../img/Fondomadera.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+
 /*Estilos del Header*/
 .header-inicio {
   background-image: url(../img/Papelnegro.jpg);
@@ -39,17 +47,17 @@
     .header-inicio .menu nav div ul li {
       list-style: none;
       margin: 15px;
-      transition: 1s;
       text-align: center; }
-      .header-inicio .menu nav div ul li:hover {
-        transform: scale(1.2);
-        color: white; }
       .header-inicio .menu nav div ul li a {
         font-family: 'Rubik Dirt', cursive;
         font-size: 24px;
         font-weight: lighter;
         color: #CC9544;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: 1s; }
+        .header-inicio .menu nav div ul li a:hover {
+          transform: scale(1.2);
+          color: white; }
 
 /*Estilos del Footer*/
 footer {
@@ -82,7 +90,10 @@ footer {
     font-size: 24px;
     font-weight: lighter;
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 1s; }
+    .volver-arriba div a:hover {
+      transform: scale(1.2); }
 
 .item-fixed {
   position: fixed;
@@ -90,3 +101,60 @@ footer {
   bottom: 0;
   width: 60px;
   margin: 21px; }
+
+/*Contenido del Index*/
+.main-inicio div {
+  font-family: 'Beth Ellen', cursive;
+  font-weight: lighter;
+  color: white;
+  text-shadow: 2px 2px 2px black; }
+  .main-inicio div .subtitulo {
+    font-family: 'Beth Ellen', cursive;
+    font-weight: lighter;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 2rem; }
+  .main-inicio div p {
+    font-weight: lighter;
+    font-size: 35px; }
+  .main-inicio div img {
+    width: 72%;
+    height: auto;
+    margin: 30px;
+    border-radius: 12px;
+    border: 1px solid whitesmoke; }
+
+.main-inicio div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-areas: "contenido-inicio-uno contenido-inicio-tres" "contenido-inicio-dos contenido-inicio-cuatro" "contenido-inicio-cinco contenido-inicio-cinco" "contenido-inicio-seis contenido-inicio-ocho" "contenido-inicio-siete contenido-inicio-nueve";
+  text-align: center; }
+  .main-inicio div .contenido-inicio-uno {
+    grid-area: contenido-inicio-uno;
+    display: inline-block; }
+  .main-inicio div .contenido-inicio-dos {
+    grid-area: contenido-inicio-dos;
+    display: inline-block; }
+  .main-inicio div .contenido-inicio-tres {
+    grid-area: contenido-inicio-tres;
+    display: inline-block; }
+  .main-inicio div .contenido-inicio-cuatro {
+    grid-area: contenido-inicio-cuatro;
+    display: inline-block; }
+  .main-inicio div .contenido-inicio-cinco {
+    grid-area: contenido-inicio-cinco;
+    display: inline-block; }
+  .main-inicio div .contenido-inicio-seis {
+    grid-area: contenido-inicio-seis;
+    display: inline-block; }
+  .main-inicio div .contenido-inicio-siete {
+    grid-area: contenido-inicio-siete;
+    display: inline-block; }
+  .main-inicio div .contenido-inicio-ocho {
+    grid-area: contenido-inicio-ocho;
+    display: inline-block; }
+  .main-inicio div .contenido-inicio-nueve {
+    grid-area: contenido-inicio-nueve;
+    display: inline-block; }

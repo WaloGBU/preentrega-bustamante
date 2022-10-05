@@ -3,3 +3,83 @@
         @extend %subtitulos;
     }
 }
+
+/*Contenido del Index*/
+.main-inicio{
+    div{
+        font-family: 'Beth Ellen', cursive;
+        font-weight: lighter;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        .subtitulo{
+            font-family: 'Beth Ellen', cursive;
+            font-weight: lighter;
+            font-size: 35px;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            margin: 2rem;
+        }
+        p{
+            font-weight: lighter;
+            font-size: 35px;
+        }
+        img{
+            width: 72%;
+            height: auto;
+            margin: 30px;
+            border-radius: 12px;
+            border: 1px solid whitesmoke;
+        }
+    }
+}
+
+.main-inicio{
+    div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: 
+        "contenido-inicio-uno contenido-inicio-tres"
+        "contenido-inicio-dos contenido-inicio-cuatro"
+        "contenido-inicio-cinco contenido-inicio-cinco"
+        "contenido-inicio-seis contenido-inicio-ocho"
+        "contenido-inicio-siete contenido-inicio-nueve";
+        text-align: center;
+        .contenido-inicio-uno{
+            grid-area: contenido-inicio-uno;
+            display: inline-block;
+        }
+        .contenido-inicio-dos{
+            grid-area: contenido-inicio-dos;
+            display: inline-block;
+        }
+        .contenido-inicio-tres{
+            grid-area: contenido-inicio-tres;
+            display: inline-block;
+        }
+        .contenido-inicio-cuatro{
+            grid-area: contenido-inicio-cuatro;
+            display: inline-block;
+        }
+        .contenido-inicio-cinco{
+            grid-area: contenido-inicio-cinco;
+            display: inline-block;
+        }
+        .contenido-inicio-seis{
+            grid-area: contenido-inicio-seis;
+            display: inline-block;
+        }
+        .contenido-inicio-siete{
+            grid-area: contenido-inicio-siete;
+            display: inline-block;
+        }
+        .contenido-inicio-ocho{
+            grid-area: contenido-inicio-ocho;
+            display: inline-block;
+        }
+        .contenido-inicio-nueve{
+            grid-area: contenido-inicio-nueve;
+            display: inline-block;
+        }
+    }
+}
