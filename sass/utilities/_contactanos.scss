@@ -7,47 +7,85 @@
 /*Contenido de Contáctanos*/
 .main-contactanos{
     div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: 0.1fr 0.1fr;
+        grid-template-areas: 
+        "contenido-contacto-uno contenido-contacto-dos"
+        "contenido-contacto-tres contenido-contacto-tres";
+        .contenido-contacto-uno{
+            grid-area: contenido-contacto-uno;
+            display: inline-block;
+        }
+        .contenido-contacto-dos{
+            grid-area: contenido-contacto-dos;
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            iframe{
+                border-radius: 12px;
+            }
+        }
+        .contenido-contacto-tres{
+            margin-top: 3rem;
+            grid-area: contenido-contacto-tres;
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                @include parrafo;
+                text-align: center;
+                font-size: 42px;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 12px;
+                padding: 1rem;
+                width: 300px;
+            }
+        }
         .subtitulo{
             @include subtitulo;
+            text-align: center;
         }
         form{
-            background: rgba(0,0,0,0.4);
-            margin: auto;
-            padding: 10px 20px;
             width: 450px;
-            border-radius: 12px;
+            margin: auto;
+            background: rgba(0,0,0,0.4);
+            padding: 10px 20px;
             box-sizing: border-box;
             margin-top: 20px;
-            legend{
+            border-radius: 12px;
+            h4{
                 color: white;
+                text-shadow: 2px 2px 2px black;
                 text-align: center;
                 margin: 0;
                 font-size: 30px;
                 margin-bottom: 20px;
-                div{
-                    input, textarea{
-                        width: 100%;
-                        margin-bottom: 20px;
-                        padding: 7px;
-                        box-sizing: border-box;
-                        font-size: 17px;
-                        border: none;
-                    }
-                    textarea{
-                        min-height: 100px;
-                        max-height: 200px;
-                        max-width: 100%;
-                    }
-                    .boton{
-                        background-color: gray;
-                        color: white;
-                        padding: 20px;
-                    }
+            }
+            .formulario{
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 7px;
+                box-sizing: border-box;
+                font-size: 17px;
+                border: none;
+            }
+            textarea{
+                min-height: 100px;
+                max-height: 200px;
+                max-width: 100%;
+            }
+            #boton{
+                background-color: black;
+                color: white;
+                padding: 6px;
+                font-size: 18px;
+                &:hover{
+                    background-color: gray;
                 }
             }
         }
-        p{
-            @include parrafo;
-        }
     }
-}
+}  
