@@ -92,9 +92,9 @@ footer {
     font-weight: lighter;
     color: white;
     text-decoration: none;
-    transition: 1s; }
+    transition: 0.5s; }
     .volver-arriba div a:hover {
-      transform: scale(1.2); }
+      color: #CC9544; }
 
 .item-fixed {
   position: fixed;
@@ -231,28 +231,24 @@ footer {
 
 /*Contenido de Contáctanos*/
 .main-contactanos div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.1fr 0.1fr;
-  grid-template-areas: "contenido-contacto-uno contenido-contacto-dos" "contenido-contacto-tres contenido-contacto-tres"; }
+  display: flex;
+  justify-content: space-evenly; }
   .main-contactanos div .contenido-contacto-uno {
-    grid-area: contenido-contacto-uno;
-    display: inline-block; }
+    display: inline-block;
+    margin: 2rem; }
   .main-contactanos div .contenido-contacto-dos {
-    grid-area: contenido-contacto-dos;
     display: inline-block;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin: 2rem; }
     .main-contactanos div .contenido-contacto-dos iframe {
       border-radius: 12px; }
   .main-contactanos div .contenido-contacto-tres {
-    margin-top: 3rem;
-    grid-area: contenido-contacto-tres;
     display: inline-block;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    margin: 2rem; }
     .main-contactanos div .contenido-contacto-tres p {
       font-size: 30px;
       color: white;
@@ -352,3 +348,69 @@ footer {
   .main-nosotros div .contenido-nosotros-cuatro {
     grid-area: contenido-nosotros-cuatro;
     display: inline-block; }
+
+/*Media Queries*/
+@media screen and (max-width: 1024px) {
+  /*Nuevo estilo del header*/
+  .header-inicio {
+    display: block;
+    text-align: center; }
+    .header-inicio #arriba {
+      font-size: 36px;
+      margin-bottom: 1.5rem; }
+  /*Nuevos estilos del Contenido del Index*/
+  .main-inicio h2 {
+    font-size: 36px; }
+  .main-inicio div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .main-inicio div p {
+      font-size: 30px; }
+    .main-inicio div img {
+      width: 85%;
+      height: auto; }
+    .main-inicio div .contenido-inicio-cinco {
+      width: 100vh; }
+    .main-inicio div .contenido-inicio-seis {
+      width: 100vh; }
+    .main-inicio div .contenido-inicio-ocho {
+      width: 100vh; }
+  /*Nuevos estilos de las sections*/
+  .volver-arriba {
+    display: none; }
+  section {
+    display: none; }
+  /*Nuevos estilos del footer*/
+  .footer-inicio {
+    display: flex;
+    align-items: center; }
+    .footer-inicio h5 {
+      font-size: 15px; }
+    .footer-inicio div {
+      display: flex; }
+  /*Nuevos estilos del contenido de Productos*/
+  .main-productos h2 {
+    font-size: 36px; }
+  .main-productos div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /*Nuevos estilos del contenido de Promociones*/
+  .main-promociones .slide {
+    width: 90%; }
+  /*Nuevos estilos del contenido de Sobre Nosotros*/
+  .main-nosotros div {
+    display: flex;
+    flex-wrap: wrap; }
+    .main-nosotros div .contenido-nosotros-tres {
+      display: flex;
+      justify-content: center; }
+    .main-nosotros div p {
+      font-size: 24px; }
+  /*Nuevos estilos del contenido de Contáctanos*/
+  .main-contactanos div {
+    display: flex;
+    flex-wrap: wrap; }
+    .main-contactanos div iframe {
+      width: 50vh; } }

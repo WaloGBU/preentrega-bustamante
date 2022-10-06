@@ -7,33 +7,27 @@
 /*Contenido de Contáctanos*/
 .main-contactanos{
     div{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr) ;
-        grid-template-rows: 0.1fr 0.1fr;
-        grid-template-areas: 
-        "contenido-contacto-uno contenido-contacto-dos"
-        "contenido-contacto-tres contenido-contacto-tres";
+        display: flex;
+        justify-content: space-evenly;
         .contenido-contacto-uno{
-            grid-area: contenido-contacto-uno;
             display: inline-block;
+            margin: 2rem;
         }
         .contenido-contacto-dos{
-            grid-area: contenido-contacto-dos;
             display: inline-block;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 2rem;
             iframe{
                 border-radius: 12px;
             }
         }
         .contenido-contacto-tres{
-            margin-top: 3rem;
-            grid-area: contenido-contacto-tres;
             display: inline-block;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            margin: 2rem;
             p{
                 @include parrafo;
                 text-align: center;

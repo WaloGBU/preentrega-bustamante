@@ -1,0 +1,107 @@
+/*Media Queries*/
+@media screen and (max-width:1024px){
+
+    /*Nuevo estilo del header*/
+    .header-inicio{
+        display: block;
+        text-align: center;
+        #arriba{
+            font-size: 36px;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    /*Nuevos estilos del Contenido del Index*/
+    .main-inicio{
+        h2{
+            font-size: 36px;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            p{
+                font-size: 30px;
+            }
+            img{
+                width: 85%;
+                height: auto;
+            }
+            .contenido-inicio-cinco{
+                width: 100vh;
+            }
+            .contenido-inicio-seis{
+                width: 100vh;
+            }
+            .contenido-inicio-ocho{
+                width: 100vh;
+            }
+        }
+    }
+
+    /*Nuevos estilos de las sections*/
+    .volver-arriba{
+        display: none;
+    }
+
+    section{
+        display: none;
+    }
+
+    /*Nuevos estilos del footer*/
+    .footer-inicio{
+        display: flex;
+        align-items: center;
+        h5{
+            font-size: 15px;
+        }
+        div{
+            display: flex;
+        }
+    }
+
+    /*Nuevos estilos del contenido de Productos*/
+    .main-productos{
+        h2{
+            font-size: 36px;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    /*Nuevos estilos del contenido de Promociones*/
+    .main-promociones{
+        .slide{
+            width: 90%;
+        }
+    }
+
+    /*Nuevos estilos del contenido de Sobre Nosotros*/
+    .main-nosotros{
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            .contenido-nosotros-tres{
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+    }
+
+    /*Nuevos estilos del contenido de Contáctanos*/
+    .main-contactanos{
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            iframe{
+                width: 50vh;
+            }
+        }
+    }
+}
