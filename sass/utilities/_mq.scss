@@ -51,6 +51,7 @@
     /*Nuevos estilos del footer*/
     .footer-inicio{
         display: flex;
+        justify-content: center;
         align-items: center;
         h5{
             font-size: 15px;
@@ -74,6 +75,9 @@
 
     /*Nuevos estilos del contenido de Promociones*/
     .main-promociones{
+        h2{
+            font-size: 36px;
+        }
         .slide{
             width: 90%;
         }
@@ -81,6 +85,9 @@
 
     /*Nuevos estilos del contenido de Sobre Nosotros*/
     .main-nosotros{
+        h2{
+            font-size: 36px;
+        }
         div{
             display: flex;
             flex-wrap: wrap;
@@ -96,6 +103,9 @@
 
     /*Nuevos estilos del contenido de Contáctanos*/
     .main-contactanos{
+        h2{
+            font-size: 36px;
+        }
         div{
             display: flex;
             flex-wrap: wrap;
@@ -104,4 +114,8 @@
             }
         }
     }
+}
+
+@media (max-width: 1023px) and (min-width: 480px){
+
 }

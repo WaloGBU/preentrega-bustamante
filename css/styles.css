@@ -17,7 +17,7 @@
 
 /*Estilos del Body*/
 body {
-  background-image: url(../../img/FondoCarbon.jpg);
+  background-image: url(../../img/MaderaNegra.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -26,7 +26,7 @@ body {
 /*Estilos del Header*/
 .header-inicio {
   background-size: cover;
-  padding: 15px 15px 0px 15px;
+  padding: 33px 15px 0px 15px;
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
@@ -35,7 +35,7 @@ body {
     margin-bottom: 10px; }
   .header-inicio .menu h1 {
     font-family: 'Rubik Dirt', cursive;
-    font-size: 60px;
+    font-size: 3.3vw;
     font-weight: lighter;
     text-align: center;
     color: white;
@@ -61,7 +61,6 @@ body {
 
 /*Estilos del Footer*/
 footer {
-  background-image: url(../img/Papelnegro.jpg);
   background-size: cover;
   padding: 6px;
   text-align: center; }
@@ -72,7 +71,7 @@ footer {
     color: white;
     margin: 20px; }
   footer div {
-    margin: 15px; }
+    margin: 10px; }
     footer div a img {
       margin-left: 15px;
       margin-right: 15px; }
@@ -84,16 +83,18 @@ footer {
 
 /*Estilos de las Sections*/
 .volver-arriba {
-  margin: 1.2rem; }
-  .volver-arriba div a {
-    font-family: 'Rubik Dirt', cursive;
-    font-size: 24px;
-    font-weight: lighter;
-    color: white;
-    text-decoration: none;
-    transition: 0.5s; }
-    .volver-arriba div a:hover {
-      color: #CC9544; }
+  margin: 1.5rem; }
+  .volver-arriba div {
+    margin: 1.5rem; }
+    .volver-arriba div a {
+      font-family: 'Rubik Dirt', cursive;
+      font-size: 24px;
+      font-weight: lighter;
+      color: white;
+      text-decoration: none;
+      transition: 0.5s; }
+      .volver-arriba div a:hover {
+        color: #CC9544; }
 
 .item-fixed {
   position: fixed;
@@ -383,6 +384,7 @@ footer {
   /*Nuevos estilos del footer*/
   .footer-inicio {
     display: flex;
+    justify-content: center;
     align-items: center; }
     .footer-inicio h5 {
       font-size: 15px; }
@@ -396,9 +398,13 @@ footer {
     flex-wrap: wrap;
     justify-content: center; }
   /*Nuevos estilos del contenido de Promociones*/
+  .main-promociones h2 {
+    font-size: 36px; }
   .main-promociones .slide {
     width: 90%; }
   /*Nuevos estilos del contenido de Sobre Nosotros*/
+  .main-nosotros h2 {
+    font-size: 36px; }
   .main-nosotros div {
     display: flex;
     flex-wrap: wrap; }
@@ -408,6 +414,8 @@ footer {
     .main-nosotros div p {
       font-size: 24px; }
   /*Nuevos estilos del contenido de Contáctanos*/
+  .main-contactanos h2 {
+    font-size: 36px; }
   .main-contactanos div {
     display: flex;
     flex-wrap: wrap; }
