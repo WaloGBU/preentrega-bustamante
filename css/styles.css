@@ -250,7 +250,7 @@ footer {
     flex-direction: column;
     margin: 2rem; }
     .main-contactanos div .contenido-contacto-tres p {
-      font-size: 30px;
+      font-size: 1.8vw;
       color: white;
       text-shadow: 2px 2px 2px black;
       margin-left: 30px;
@@ -314,7 +314,7 @@ footer {
     text-shadow: 2px 2px 2px black;
     margin: 2rem; }
   .main-nosotros div p {
-    font-size: 30px;
+    font-size: 1.8vw;
     color: white;
     text-shadow: 2px 2px 2px black;
     margin-left: 30px;
@@ -328,14 +328,16 @@ footer {
     height: auto;
     margin: 30px;
     border-radius: 12px;
-    border: 2px solid white; }
+    border: 2px solid white;
+    margin-top: 1px; }
 
 .main-nosotros div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0.1fr 0.1fr;
   grid-template-areas: "contenido-nosotros-uno contenido-nosotros-dos" "contenido-nosotros-tres contenido-nosotros-cuatro";
-  align-items: center; }
+  align-items: center;
+  align-items: flex-start; }
   .main-nosotros div .contenido-nosotros-uno {
     grid-area: contenido-nosotros-uno;
     display: inline-block; }

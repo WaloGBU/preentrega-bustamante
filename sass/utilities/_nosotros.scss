@@ -20,6 +20,7 @@
         }
         img{
             @include imagen;
+            margin-top: 1px;
         }
     }
 }
@@ -49,5 +50,6 @@
             grid-area: contenido-nosotros-cuatro;
             display: inline-block;        
         }
+        align-items: flex-start;
     }
 }
