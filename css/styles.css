@@ -384,9 +384,3 @@ footer {
     flex-wrap: wrap; }
     .main-contactanos div iframe {
       width: 50vh; } }
-
-@media (max-width: 1023px) and (min-width: 480px) {
-  /*Nuevos estilos de Productos*/
-  .main-productos div {
-    display: flex;
-    flex-wrap: wrap; } }
